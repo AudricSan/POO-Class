@@ -12,16 +12,18 @@
 
         <title>Document</title>
     </head>
-    
+
     <body>
         <h1> coucou </h1>
 
         <?php
             // Create some new User Object
-                $user1 = new user('Audric', 'password', 'weasel', "");
-                $user2 = new user('Xavier', 'password', 'Crow', "");
-                $user3 = new user('Ronald', 'password', 'Raccon', "");
-                $user4 = new user('Eric', 'password', 'Buffalo ', "");
+                $user1 = new user('Audric', 'password', 'weasel', "", true, false);
+                $user2 = new user('Xavier', 'password', 'Crow', "", true, false);
+                $user3 = new user('Ronald', 'password', 'Racoon', "", true, false);
+                $user4 = new user('Eric', 'password', 'Buffalo', "", true, false);
+                $user5 = new user('Celine', 'password', 'Sloth', "", false, true);
+                $user6 = new user('Thibault', 'password', 'platypus', "", false, false);
             //
             
             // Methode to change User Info
@@ -37,6 +39,8 @@
                 var_dump($user2);
                 var_dump($user3);
                 var_dump($user4);
+                var_dump($user5);
+                var_dump($user6);
             //
 
             // Methode to show User Info
