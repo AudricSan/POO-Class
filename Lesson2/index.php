@@ -11,7 +11,7 @@
 	<h2>Script PHP de test</h2>
 	<?php 
 		 //include_once("Complexe.class.php");
-		 require 'classes/nombreComplexe.class.php';
+		 require 'Class/number.php';
 		 
 		$c1 = new Complexe(3,1);
 		$c2 = new Complexe(1,2);
