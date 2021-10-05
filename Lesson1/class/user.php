@@ -37,7 +37,7 @@
         }
 
         public function getPay(){
-            return $this -> user_bday;
+            return $this -> user_pay;
         }
 
         public function getBan(){
