@@ -6,15 +6,17 @@
         private $user_bday;
         private $user_pay;
         private $user_maybeBan;
+        private $user_statut;
 
         //Function to Consctruct
-        public function __construct($n, $p, $l, $bd, $pay, $ban){
+        public function __construct($n, $p, $l, $bd, $pay, $ban, $sta){
             $this -> user_name = $n;
             $this -> user_pass = $p;
             $this -> user_login = $l;
             $this -> user_bday = $bd;
             $this -> user_pay = $pay;
             $this -> user_maybeBan = $ban;
+            $this -> user_statut = $sta;
         }
 
         //Function to read
@@ -42,6 +44,10 @@
             return $this -> user_maybeBan;
         }
 
+        public function getStatut(){
+            return $this -> user_statut;
+        }
+
         //Function to Edit
         public function setNom($new_user_name){
             $this -> user_name = $new_user_name;
@@ -65,6 +71,10 @@
 
         public function setBan($new_user_ban){
             $this -> user_maybeBan = $new_user_ban;
+        }
+
+        public function setStatut($new_user_Statut){
+            $this -> user_statut = $new_user_Statut;
         }
     }
 ?>
