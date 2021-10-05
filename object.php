@@ -18,12 +18,12 @@
 
         <?php
             // Create some new User Object
-                $user1 = new user('Audric', 'password', 'weasel', "", true, false);
-                $user2 = new user('Xavier', 'password', 'Crow', "", true, false);
-                $user3 = new user('Ronald', 'password', 'Racoon', "", true, false);
-                $user4 = new user('Eric', 'password', 'Buffalo', "", true, false);
-                $user5 = new user('Celine', 'password', 'Sloth', "", false, true);
-                $user6 = new user('Thibault', 'password', 'platypus', "", false, false);
+                $user1 = new user('Audric', 'password', 'weasel', "", true, false, "Boss");
+                $user2 = new user('Xavier', 'password', 'Crow', "", true, false, "Right arm");
+                $user3 = new user('Ronald', 'password', 'Racoon', "", true, false, "Pathfinder");
+                $user4 = new user('Eric', 'password', 'Buffalo', "", true, false, "Bouncer");
+                $user5 = new user('Celine', 'password', 'Sloth', "", false, true, "Unnecessary");
+                $user6 = new user('Thibault', 'password', 'platypus', "", false, false, "System Operator");
             //
             
             // Methode to change User Info
