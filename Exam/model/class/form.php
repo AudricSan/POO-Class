@@ -24,5 +24,26 @@ class Form{
     public function submit($name){
         return $this->surround('<button type="submit">' . $name . '</button>');
     }
+
+    private function getHtml($array){
+        $data = [];
+        $a = 0;
+        foreach ($array as $arr) {
+            $a ++;
+            $data[$a] =  $this->input($arr[0], $arr[1], $arr[2]);
+        }
+        return $data;
+    }
+
+    public function getForms($array, $submit){
+        $html = $this->getHtml($array);
+        foreach($html as $val){
+            // var_dump($html);
+            // var_dump($val);
+            echo $val;
+        }
+
+        return $this->submit($submit);
+    }
 }
 ?>
