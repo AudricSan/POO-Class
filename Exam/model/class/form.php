@@ -1,5 +1,5 @@
 <?php
-class Form{
+class Form implements formInterface{
 
     private $data;
     public $surround = 'p';
@@ -35,7 +35,7 @@ class Form{
             // var_dump($a);
             // var_dump($data);
         }
-
+        
         return $data;
     }
 
