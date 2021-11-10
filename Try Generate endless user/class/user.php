@@ -4,19 +4,17 @@
         private $user_pass;
         private $user_login;
         private $user_bday;
-        private $user_pay;
-        private $user_maybeBan;
         private $user_statut;
+        private $user_pay;
 
         //Function to Consctruct
-        public function __construct($n, $p, $l, $bd, $pay, $ban, $sta){
+        public function __construct($n, $p, $l, $bd, $pay, $sta){
             $this -> user_name = $n;
             $this -> user_pass = $p;
             $this -> user_login = $l;
             $this -> user_bday = $bd;
-            $this -> user_pay = $pay;
-            $this -> user_maybeBan = $ban;
             $this -> user_statut = $sta;
+            $this -> user_premium = $pay;
         }
 
         //Function to read
@@ -38,10 +36,6 @@
 
         public function getPay(){
             return $this -> user_pay;
-        }
-
-        public function getBan(){
-            return $this -> user_maybeBan;
         }
 
         public function getStatut(){
@@ -67,10 +61,6 @@
         
         public function setPay($new_user_pay){
             $this -> user_pay = $new_user_pay;
-        }
-
-        public function setBan($new_user_ban){
-            $this -> user_maybeBan = $new_user_ban;
         }
 
         public function setStatut($new_user_Statut){

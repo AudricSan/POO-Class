@@ -1,3 +1,4 @@
+
 <?php
     //Include Class 
         require 'class/user.php';
@@ -18,12 +19,12 @@
 
         <?php
             // Create some new User Object
-                $user1 = new user('Audric', 'password', 'weasel', "", true, false, "Boss");
-                $user2 = new user('Xavier', 'password', 'Crow', "", true, false, "Right arm");
+                $user1 = new user('Audric', 'password', 'Weasel', "", true, false, "Boss");
+                $user2 = new user('Xavier', 'password', 'Crow', "", true, false, "Right Arm");
                 $user3 = new user('Ronald', 'password', 'Racoon', "", true, false, "Pathfinder");
                 $user4 = new user('Eric', 'password', 'Buffalo', "", true, false, "Bouncer");
                 $user5 = new user('Celine', 'password', 'Sloth', "", false, true, "Unnecessary");
-                $user6 = new user('Thibault', 'password', 'platypus', "", false, false, "System Operator");
+                $user6 = new user('Thibault', 'password', 'Platypus', "", false, false, "System Operator");
             //
             
             // Methode to change User Info
