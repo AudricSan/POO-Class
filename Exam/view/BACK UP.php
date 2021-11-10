@@ -49,7 +49,7 @@ $titreMenu = ['Menu', 'Choix Consomation', 'A Rajouter'];
 <h2>Selection Menu</h2>
     <fieldset>
         <form action="" method="post">
-        <h3>Information Personel</h3>
+        <h3>votre menu</h3>
             <?php
             // echo $form->input('FirstName', 'text', 'FirstName');
             echo $form2->getForms($data2);
