@@ -17,7 +17,7 @@ class Form{
     }
 
     public function input($label, $type, $name){
-        $a = '<label for="' . $label . '">' . $label . '</label> : <input type="' . $type . '" name="' . $name . '" id="' . $label . '" value="' . $this->getvalue($name) . '">';
+        $a = '<label for="' . $label . '">' . $label . ' : </label> <input type="' . $type . '" name="' . $name . '" id="' . $label . '" value="' . $this->getvalue($name) . '">';
         return $this->surround($a);
     }
 
@@ -28,22 +28,24 @@ class Form{
     private function getHtml($array){
         $data = [];
         $a = 0;
+
         foreach ($array as $arr) {
-            $a ++;
             $data[$a] =  $this->input($arr[0], $arr[1], $arr[2]);
+            $a ++;
+            // var_dump($a);
+            // var_dump($data);
         }
+
         return $data;
     }
 
-    public function getForms($array, $submit){
+    public function getForms($array){
         $html = $this->getHtml($array);
         foreach($html as $val){
             // var_dump($html);
             // var_dump($val);
             echo $val;
         }
-
-        return $this->submit($submit);
     }
 }
 ?>
