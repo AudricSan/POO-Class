@@ -1,6 +1,6 @@
 <?php
 
-require('../model/class/form.php');
+require('../model/class/form0.php');
 
 var_dump($_POST);
 
