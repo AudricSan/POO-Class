@@ -69,15 +69,15 @@ $submit = 'valider';
         <form action="" method="post">
             <?php
             echo "<h3>" . $titreMenu[0] . "</h3>";
-            echo $form->getForms($dataMenu);
+            echo $form2->getForms($dataMenu);
 
             echo "<h3>" . $titreMenu[1] . "</h3>";
-            echo $form->getForms($dataConso);
+            echo $form2->getForms($dataConso);
 
             echo "<h3>" . $titreMenu[2] . "</h3>";
-            echo $form->getForms($dataAjou);
+            echo $form2->getForms($dataAjou);
 
-            echo $form->submit($submit);
+            echo $form2->submit($submit);
             ?>
         </form>
     </fieldset>
